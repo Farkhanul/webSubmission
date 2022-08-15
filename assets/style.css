@@ -1,0 +1,309 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .layar-satu {
+    width: 1000px;
+    margin: auto;
+  }
+  .layar-dua {
+    width: 100%;
+  }
+  nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+  }
+  nav.biru {
+    background-color: #00c8eb;
+  }
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+  }
+  nav .logo img {
+    vertical-align: middle;
+    width: 200px;
+  }
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+  }
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+  }
+  nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+  }
+  header .pengenalan {
+    z-index: 100;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+  }
+  header .pengenalan h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 65%;
+  }
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: white;
+  }
+  #tentangkami,
+  #galeri,
+  #program,
+  #kontak {
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+  }
+  #tentangkami h3,
+  #galeri h3,
+  #program h3,
+  #kontak h3 {
+    font-size: 30px;
+  }
+  #tentangkami h3::after,
+  #galeri h3::after,
+  #program h3::after,
+  #kontak h3::after {
+    content: "";
+    border-bottom: 5px solid #00a2c6;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+  }
+  #tentangkami .isi {
+    font-style: normal;
+  }
+  section.gambar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 15px 0px 15px 0px;
+    background-color: #00c8eb;
+  }
+  section.gambar div {
+    padding: 7.5px;
+  }
+  section.gambar div img {
+    height: 100px;
+    border-radius: 10px;
+  }
+  section.gambar div img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
+  .program{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;
+  }
+  .program .area {
+    width: 47%;
+    box-shadow: 0px -10px 50px #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .program section.area section {
+    width: 50%;
+  }
+  .program .area .gambar {
+    border-radius: 5px 0px  0px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 370px;
+  }
+  .program .area .text {
+    padding: 40px;
+  }
+  .program .area .text h4 {
+    margin: 0px;
+  }
+  .program .area .text a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  .program .area .text a:hover {
+    color: #ccc;
+  }
+  .informasi {
+    padding: 15px 0px 400px 0px;
+    background-color: #b1b1b1;
+    text-align: left;
+    margin: 0px;
+  }
+  .logo-bawah {
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 300px;
+  }
+  .uraian {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .uraian p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .uraian h5 {
+    font-size: 20px;
+    text-align: left;
+  }
+  aside .bio img {
+    width: 100px;
+    object-position: center;
+  }
+  th,
+  td {
+    text-align: left;
+  }
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 999px) {
+    .layar-satu {
+    width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: white;
+      line-height: 40px;
+    }
+    nav .menu ul li a {
+      color: black;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    .program .area {
+      display: block;
+    }
+    .program section.area section {
+      width: 100%;
+    }
+    .program .area .gambar {
+      border-radius: 5px 5px 0px 0px;
+      height: 200px;
+    }
+    .program .area .text {
+      padding: 1px;
+      width: 100%;
+    }
+    .informasi {
+      padding: 15px 0px 600px 0px;
+      background-color: #b1b1b1;
+      text-align: left;
+      margin: 0px;
+    }
+    .logo-bawah {
+      float: left;
+      position: relative;
+      width: 100px;
+    }
+    .uraian {
+      float: left;
+      padding: 2px;
+      width: 100%;
+    }
+    .uraian h5 {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
